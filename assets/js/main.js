@@ -22,10 +22,23 @@ function Pokemon(nombre,color,poderDeAtaque){
 	}
 }
 
-var Pikachu = new Pokemon ("Pikachu", "amarillo", 100)
-var Charmander = new Pokemon ("Charmander", "rojo", 20)
+function combate(){
+	var info = document.getElementById("caja");
+	var poke1 =document.getElementById("poke1").value;
+	var poke2 =document.getElementById("poke2").value;
+	var valorAt = prompt("Ingresa un poder de ataque");
+	var atac1 = new Pokemon (poke1,"color",valorAt);
+	var atac2 = new Pokemon(poke2,"otro color",5);
+
+	atac1.atacar(atac2);
+
+	info.innerHTML = atac1.nombre +" atacó a " + atac2.nombre + " y " + atac2.nombre + " tiene una vida de: " + atac2.vida;
 
 
-var info = document.getElementById("caja");
+}
 
-info.innerHTML += Pikachu.aumentarAmistad(30);
+
+
+
+
+
