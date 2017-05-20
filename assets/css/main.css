@@ -1,3 +1,23 @@
 body{
-	text-align:center;
+	font-family: 'Gloria Hallelujah', cursive;
+	background-image: url(../img/background.jpg);
+	position: absolute;
+	
+}
+#logo{
+	 text-align: center
+}
+#lucha{
+	align-items: center;
+	display: block;
+}
+#boton{
+	font-family: 'Gloria Hallelujah', cursive;
+	padding:7px;
+	width: 77px;
+	align-content: center;
+
+}
+#caja{
+
 }
