@@ -28,5 +28,8 @@ body{
 	font-weight: bolder;
 	margin: 0 auto;
 	display: inline-block;
+	align-items: center; /*<-- se supone que esto centra el botón pero no funciona*/
+}
+#caja{
 	text-align: center;
 }
