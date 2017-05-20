@@ -23,6 +23,7 @@ function Pokemon(nombre,color,poderDeAtaque){
 }
 
 function combate(){
+	
     var info = document.getElementById("caja");
 	var poke1 =document.getElementById("poke1").value;
 	var poke2 =document.getElementById("poke2").value;
@@ -37,11 +38,12 @@ function combate(){
 
 			info.innerHTML = atac1.nombre +" atacó a " + atac2.nombre + " y " + atac2.nombre + " tiene una vida de: " + atac2.vida;
 
-	}else if (poke1 ==poke2){
+	}else if (poke1 == poke2){
 
 		alert("¡" + poke1 + " no se puede atacar a si mismo!");
-	}
 
+	
+}
 	
 	
 	

@@ -8,8 +8,9 @@
 </head>
 <body>
 	<h1 id="logo">Lucha de pokemones</h1>
-
-	<section id="lucha">
+	
+	<section id="lucha1">
+	<p>Escoge el primer rival</p>
 	<select name="poke1" id="poke1">
 		<option  hidden selected>Selecciona tu pokémon</option>
 		<option class="amarillo" value="Pikachu">Pikachu</option>
@@ -17,6 +18,9 @@
 		<option class="verde" value="Bulbasaur">Bulbasaur</option>
 		<option class="azul" value="Squirtle">Squirtle</option>
 	</select>
+	</section>
+	<section id="lucha2">
+	<p>Escoge el segundo rival</p>
 	<select name="poke2" id="poke2">
 		<option  hidden selected>Selecciona tu pokémon</option>
 		<option class="amarillo" value="Pikachu">Pikachu</option>
@@ -25,7 +29,10 @@
 		<option class="azul" value="Squirtle">Squirtle</option>
 	</select>
 	</section>
-	<button id ="boton" onclick="combate()">A pelear!</button>
+
+	<div id ="boton">
+	<button id="botoncito" onclick="combate()">A pelear!</button>
+	</div>
 	
 	<div id="caja"></div>
 	<script src="assets/js/main.js"></script>
