@@ -23,16 +23,32 @@ function Pokemon(nombre,color,poderDeAtaque){
 }
 
 function combate(){
-	var info = document.getElementById("caja");
+    var info = document.getElementById("caja");
 	var poke1 =document.getElementById("poke1").value;
 	var poke2 =document.getElementById("poke2").value;
-	var valorAt = prompt("Ingresa un poder de ataque");
+	var valorAt = parseInt(prompt("Ingresa un poder de ataque"));
 	var atac1 = new Pokemon (poke1,"color",valorAt);
 	var atac2 = new Pokemon(poke2,"otro color",5);
+	
 
-	atac1.atacar(atac2);
+	if(poke1 != poke2){
+		
+		atac1.atacar(atac2);
 
-	info.innerHTML = atac1.nombre +" atacó a " + atac2.nombre + " y " + atac2.nombre + " tiene una vida de: " + atac2.vida;
+			info.innerHTML = atac1.nombre +" atacó a " + atac2.nombre + " y " + atac2.nombre + " tiene una vida de: " + atac2.vida;
+
+	}else if (poke1 ==poke2){
+
+		alert("¡" + poke1 + " no se puede atacar a si mismo!");
+	}
+
+	
+	
+	
+
+
+
+	
 
 
 }
